@@ -18,6 +18,15 @@ cp src/configs/config.example.json src/configs/config.json
 [![Managed with Taiga.io](https://img.shields.io/badge/managed%20with-TAIGA.io-709f14.svg)](https://tree.taiga.io/project/taiga/ "Managed with Taiga.io")
 [![CI](https://github.com/kaleidos-ventures/taiga-front-next/workflows/CI/badge.svg?branch=main)](https://github.com/kaleidos-ventures/taiga-front-next/actions)
 
+## Build
+```bash
+npm install --include=dev
+NODE_OPTIONS=--openssl-legacy-provider npm run build:elements
+NODE_OPTIONS=--openssl-legacy-provider npm run pack:elements
+```
+
+Then copy `dist/elements/elements.js` into the Taiga-Front repository.
+
 ## Get the compiled version ##
 
 You can get the compiled version of this code in the
