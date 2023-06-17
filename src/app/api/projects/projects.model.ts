@@ -196,6 +196,7 @@ export interface Project {
   };
   isWatcher: boolean;
   isWikiActivated: boolean;
+  isEmployeeLogActivated: boolean;
   issueCustomAttributes: CustomAttribute[];
   issueDuedates: Duedates[];
   issueStatuses: Status[];

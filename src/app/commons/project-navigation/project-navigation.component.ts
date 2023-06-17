@@ -274,6 +274,10 @@ export class ProjectNavigationComponent implements OnChanges, OnInit {
     return this.project.isWikiActivated && this.project.myPermissions.includes(Permissions.viewWikiPages);
   }
 
+  get isMenuEmployeeLogEnabled() {
+    return this.project.isEmployeeLogActivated && this.project.myPermissions.includes(Permissions.isEmployee);
+  }
+
   public toggleScrum() {
     if (this.collapsed) {
       this.router.navigate(['/project', this.project.slug, 'backlog']);

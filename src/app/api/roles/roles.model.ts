@@ -57,6 +57,9 @@ export enum Permissions {
   addMember = 'add_member',
   removeMember = 'remove_member',
   adminRoles = 'admin_roles',
+  // Employee Log
+  isEmployee = 'is_employee',
+  isManagement = 'is_management',
 }
 
 export interface Role {
