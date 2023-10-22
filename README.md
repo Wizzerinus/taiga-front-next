@@ -20,7 +20,8 @@ cp src/configs/config.example.json src/configs/config.json
 
 ## Build
 ```bash
-npm install --include=dev
+npm install --include=dev --omit=optional
+npm audit fix
 NODE_OPTIONS=--openssl-legacy-provider npm run build:elements
 NODE_OPTIONS=--openssl-legacy-provider npm run pack:elements
 ```
